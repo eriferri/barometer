@@ -1,0 +1,417 @@
+/* ---- Styles for demoing Style Guide, not to be implemented in production ---- */
+@import '_variables.scss';
+	
+$sg-primary: #b8ffb8;
+$sg-secondary:;
+
+
+body {
+	position: relative;
+}
+h1.sg {
+	font-family:"Garamond", "Georgia", serif; 
+	display: block;
+	float: none;
+	border-bottom: 1px solid $brand-supportive;
+	margin-bottom: $baseline;
+	margin-top: $baseline *3;
+	padding-bottom: $baseline;
+}
+h1.sg2 {
+	font-family:"Garamond", "Georgia", serif; 
+	display: block;
+	float: none;
+	border-bottom: 1px solid $brand-supportive;
+	padding-bottom: $baseline;
+	padding-top: 80px;
+}
+h2.sg {
+	font-family:"Garamond", "Georgia", serif; 
+	border-bottom: 1px solid $brand-supportive;
+	display: block;
+	float: none;
+	margin-top: 0;
+	margin-bottom: $baseline;
+	padding-bottom: 0;
+	text-transform: none; 
+	letter-spacing: 1px;
+}
+h3.sg{
+	font-family:"Garamond", "Georgia", serif; 
+	font-size-adjust:0.508; 
+	font-weight:600; 
+	font-style:normal;
+}
+
+.sgWrapper {
+	margin-bottom: $baseline*3;
+}
+ul.styleguide {
+	margin: 0;
+	padding: 0;
+	li {
+		border-top: 1px solid $brand-supportive-light;
+		list-style-type: none;	
+		li {
+			border-top: none;
+		}
+	}
+}
+.well.sg {
+	font-family:"Garamond", "Georgia", serif; 
+	margin-top:$baseline;
+
+}
+/* Menu styles (from bootstrap docs) */
+
+.bs-docs-sidebar.affix {
+	position: static
+}
+
+
+.bs-docs-sidenav {
+	margin: 80px 0;
+}
+.bs-docs-sidebar .nav>li>a {
+	display: block;
+	//padding: 4px 20px;
+	font-size: 13px;
+	font-weight: 500;
+	color: #767676;
+	border-bottom: 0;
+	font-family:"Garamond", "Georgia", serif; 
+
+}
+.bs-docs-sidebar .nav > li > a:focus, .bs-docs-sidebar .nav > li > a:hover {
+    padding-left: 19px;
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #563d7c;
+    -moz-transition: $trans;
+    -o-transition: $trans;
+    -webkit-transition: $trans;
+    transition: $trans;
+}
+@media (min-width: 768px){
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+  margin-left: 0;
+  margin-right:70px;
+ }
+}
+.bs-docs-sidebar .nav>.active:focus >a, .bs-docs-sidebar .nav>.active:hover >a, .bs-docs-sidebar .nav>.active>a {
+	padding-left: 18px;
+	font-weight: 700;
+	color: #563d7c;
+	background-color: transparent;
+	border-left: 2px solid #563d7c;
+}
+.bs-docs-sidebar .nav .nav {
+	display: none;
+	padding-bottom: 10px
+}
+
+.bs-docs-sidebar .nav .nav>li>a {
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 30px;
+	font-size: 12px;
+	font-weight: 400
+}
+
+.bs-docs-sidebar .nav .nav>li>a:focus, .bs-docs-sidebar .nav .nav>li>a:hover {
+	padding-left: 29px
+}
+
+.bs-docs-sidebar .nav .nav>.active:focus >a, .bs-docs-sidebar .nav .nav>.active:hover >a, .bs-docs-sidebar .nav .nav>.active>a {
+	padding-left: 28px;
+	font-weight: 500
+}
+
+.back-to-top, .bs-docs-theme-toggle {
+	display: none;
+	/*margin-top: 80px;*/
+	margin-left: 24px;
+	font-weight: 500;
+	color: #000000;	
+	border-bottom: 0;
+	font-family:"Garamond", "Georgia", serif; 
+}
+
+.back-to-top:hover, .bs-docs-theme-toggle:hover {
+	//color: @blue-light;
+	text-decoration: none;
+}
+
+.back-to-top > a:focus{
+	color:#000000;
+	text-decoration: none;
+}
+
+.bs-docs-theme-toggle {
+	margin-top: 0
+}
+
+.nav .navbar-nav>li:active{
+	color: red;
+	background-color: green;
+}
+
+ .navbar-nav > li:hover{
+ 	//background-color: @blue-back;
+ }
+
+@media (min-width:768px) {
+    
+    .back-to-top, .bs-docs-theme-toggle {
+	    display: block;
+    }
+}
+
+@media (min-width:992px) {
+.bs-docs-sidebar .nav>.active>ul {
+	display: block;
+}
+
+.bs-docs-sidebar.affix, .bs-docs-sidebar.affix-bottom {
+	width: 213px
+}
+
+.bs-docs-sidebar.affix {
+	position: fixed;
+	top: 80px;
+}
+
+.bs-docs-sidebar.affix-bottom {
+	position: absolute;
+}
+
+.bs-docs-sidebar.affix .bs-docs-sidenav, .bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+}
+
+@media (min-width:1200px) {
+.bs-docs-sidebar.affix, .bs-docs-sidebar.affix-bottom {
+	width: 263px
+}
+}
+
+.button-definition{
+	line-height: $baseline*3;
+}
+.intro-text{
+	margin-bottom: $baseline*2;
+}
+/* end menu styles*/
+
+.color-block {
+	display: block; 
+	width: 100%	;
+	height: 50px;
+	margin-bottom: $baseline;
+	margin-top: $baseline;
+
+	&.third {
+		width: 33.33%;
+		float: left;
+		margin-top: -$baseline;
+		padding: $baseline/2;
+		text-align: center;
+	}
+
+	&.half {
+		width: 50%;
+		float: left;
+		margin-top: -$baseline;
+		padding: $baseline/2;
+		text-align: center;
+	}
+
+	&.quart {
+		width: 25%;
+		float: left;
+		margin-top: -$baseline;
+		padding: $baseline/2;
+		text-align: center;
+	}
+
+	&.brand-logo {
+		background: $brand-logo;
+	}
+
+	&.brand-logo-50 {
+		background-color: $brand-logo-50;
+	}
+
+	&.brand-logo-25{
+		background-color: $brand-logo-25;
+	}
+
+	&.brand-logo-10 {
+		background-color: $brand-logo-10;
+	}
+
+	&.brand-logo-05 {
+		background-color: $brand-logo-05;
+	}
+
+	&.brand-primary{
+		background: $brand-primary;
+	}
+
+	&.brand-primary-50 {
+		background: $brand-primary-50;
+	}
+
+	&.brand-primary-25 {
+		background: $brand-primary-25;
+	}
+
+	&.brand-primary-10{
+		background: $brand-primary-10;
+	}
+
+	&.brand-primary-05{
+		background: $brand-primary-05;
+	}
+
+	&.brand-secondary{
+		background: $brand-secondary;
+	}
+
+	&.brand-secondary-50 {
+		background: $brand-secondary-50;
+	}
+	
+	&.brand-secondary-25{
+		background: $brand-secondary-25;
+	}
+	
+	&.brand-secondary-10{
+		background: $brand-secondary-10;
+	}
+	
+	&.brand-secondary-05{
+		background: $brand-secondary-05;
+	}
+
+	&.brand-secondary-button{
+		background: $brand-secondary-button;
+	}
+
+	&.brand-red {
+		background: $brand-red;
+	}
+	
+    &.brand-red-50 {
+		background: $brand-red-50;
+	}
+	
+    &.brand-red-25 {
+		background: $brand-red-25;
+	}
+	
+    &.brand-red-10 {
+		background: $brand-red-10;
+	}
+	
+    &.brand-red-05 {
+		background: $brand-red-05;
+	}
+	
+    &.brand-yellow{
+		background: $brand-yellow;
+	}
+	
+    &.brand-yellow-50{
+		background: $brand-yellow-50;
+	}
+	
+    &.brand-yellow-25{
+		background: $brand-yellow-25;
+	}
+	
+    &.brand-yellow-05{
+		background: $brand-yellow-05;
+	}
+	
+    &.brand-yellow-box{
+		background: $brand-yellow-box;
+	}
+	
+    &.brand-purple{
+		background: $brand-purple;
+	}
+	
+    &.brand-purple-50{
+		background: $brand-purple-50;
+	}
+	
+    &.brand-purple-25{
+		background: $brand-purple-25;
+	}
+	
+    &.brand-purple-10{
+		background: $brand-purple-10;
+	}
+	
+    &.brand-purple-05{
+		background: $brand-purple-05;
+	}
+	
+    &.brand-green{
+		background: $brand-green;
+	}
+	
+    &.brand-green-50{
+		background: $brand-green-50;
+	}
+	
+    &.brand-green-25{
+		background: $brand-green-25;
+	}
+	
+    &.brand-green-10{
+		background: $brand-green-10;
+	}
+	
+    &.brand-green-05{
+		background: $brand-green-05;
+	}
+	
+    &.brand-supportive{
+		background: $brand-supportive;
+	}
+	
+    &.brand-supportive-50{
+		background: $brand-supportive-50;
+	}
+	
+    &.brand-supportive-25{
+		background: $brand-supportive-25;
+	}
+	
+    &.brand-supportive-10{
+		background: $brand-supportive-10;
+	}
+	
+    &.brand-supportive-05{
+		background: $brand-supportive-05;
+	}
+	
+    &.brand-supportive-light{
+		background: $brand-supportive-light;
+	}
+	
+    &.text-color {
+		background-color: $text-color;
+	}
+	
+    &.text-color-light {
+		background: $text-color-light;
+	}
+}
+
+/* Style guide end */

@@ -1,0 +1,36 @@
+#instagram {
+	border: 1px solid $brand-supportive-25;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px, rgba(0, 0, 0, 0.14902) 0px 1px 10px 0px;
+	margin: 0 10px 10px 5px ;
+	
+	.moduleHead {
+		height: 80px;
+		.instaLogo {
+			margin-top: 26px;
+			padding: 0 0 0 $baseline * 2;
+			max-width: 30%;	
+		}
+	}
+	.moduleBody {
+		padding: 0 $baseline;
+		max-height: 290px;
+		overflow: hidden;
+		margin-bottom: $baseline/2;		
+		
+		img {
+			max-width: 100%;
+		}
+	}
+	.moduleFoot {
+		
+		background-color: $brand-supportive-10;
+		padding: $baseline/2 $baseline;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		.social {
+			text-align: left;
+		}
+
+	}
+}

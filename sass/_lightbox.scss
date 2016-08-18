@@ -1,0 +1,183 @@
+/* ------ Lightbox ------- */
+@import '_variables.scss';
+	
+.modal {
+	top: 110px;
+}
+#alert {
+	.modal-dialog {	
+		
+		.modal-content {
+			border-radius: 0;
+			border: 4px solid $brand-red;		
+			
+			
+			.modal-header {		
+				background-color: $brand-red;
+				color: white;		
+				height: 80px;
+				padding-top: $baseline + 1px;
+				padding-left: $baseline * 4;
+
+
+				.close {
+					opacity: 1;
+					text-shadow: 0 0 0 ;
+					margin-top: 5px;
+					margin-right: 10px;
+					
+	                span.txt {
+						font-size: 13px;
+						font-weight: normal;
+						color: white;
+						letter-spacing: 1.5px;
+						margin-right: $baseline;				}
+				}
+
+				.close-alert {
+					width: 23px;
+					height: 23px;
+				}			
+			}
+
+			.modal-body {
+				padding: $baseline * 2 $baseline  * 4 $baseline * 3 $baseline  * 4;
+
+				p.lede {
+					margin-bottom: $baseline;
+				}
+			}
+		}
+	}
+}
+#myModal {
+	.modal-dialog {	
+		
+		.modal-content {
+			border-radius: 0;
+			border: 1px solid $text-color;		
+			
+			
+			.modal-header {		
+				//background-color: $brand-red;
+				//color: white;		
+				height: 80px;
+				padding-top: $baseline + 1px;
+				padding-left: $baseline * 3.5;
+				border-bottom: none;
+
+
+				.close {
+					opacity: 1;
+					text-shadow: 0 0 0 ;
+					margin-top: 5px;
+					margin-right: 10px;
+					
+	                span.txt {
+						font-size: 13px;
+						font-weight: normal;
+						color: white;
+						letter-spacing: 1.5px;
+						margin-right: $baseline;				}
+				}
+
+				.close-alert {
+					width: 23px;
+					height: 23px;
+				}			
+			}
+
+			.modal-body {
+				padding: $baseline * 2 $baseline  * 3.5 $baseline  $baseline  * 3.5;
+
+				p.lede {
+					margin-bottom: $baseline;
+				}
+				.form-group.searchbox  {
+					width: 100%;
+					margin-bottom: $baseline;
+				}
+					.checkbox {
+						height: 420px;
+						overflow-y: scroll;
+						width: 100%;
+						border: 1px solid $text-color-light;
+						padding: $baseline/2;
+
+						&::-webkit-scrollbar {
+						    -webkit-appearance: none;
+						    width: 7px;
+						}
+
+						&::-webkit-scrollbar-thumb {
+						    border-radius: 4px;
+						    background-color: rgba(0,0,0,.5);
+						    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+						}
+
+						label {
+							display: block;
+							margin-bottom: $baseline;
+							padding-left: $baseline * 1.5;
+
+							input[type="checkbox"] {
+								margin-left: -$baseline * 1.5;
+							}
+						}
+
+					}
+
+					.btn {
+						height: 44px;
+						padding: $baseline/2;
+						.fa {
+							margin-right: 0;
+						}
+				}
+				
+				input[type="text"] {
+					width: 428px;
+				}
+			}
+			.modal-footer {
+				border-top: none;
+				padding: $baseline  * 1.5;	
+
+				.btn-link {
+					margin-top: 17px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------  End -------- */

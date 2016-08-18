@@ -1,0 +1,110 @@
+/* ---- Accordion ---- */
+@import '_variables.scss';
+
+#list {
+
+    .module {
+        &#messagefeed {
+
+            .panel-group {
+                margin-bottom: 0;
+
+                .panel {
+                    border: 0;
+                    border-bottom: 1px solid $brand-secondary-25;
+                    border-radius: 0;
+                    box-shadow: none;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    &.panel-default {
+
+                        .panel-heading {
+                            padding: 0;
+                            color: $text-color;
+                            background-color: white;
+                            border-bottom: none;
+                            border-right: red;
+
+                            h4.panel-title {
+                                font-weight: bold;
+                                line-height: $baseline;
+                                display: inline-block;
+                            }
+
+                            span.date {
+                                float: right;
+                                font-size: 80%;
+                                font-weight: normal;
+                                display: inline-block;
+                                margin-right: $baseline;
+                                color: $text-color-light;
+                            }
+
+                            p {
+                                margin-bottom: 0;
+                                margin-top: $baseline/4;
+                                padding: 0 $baseline * 3;
+                            }
+
+                            .patch {
+                                width: $baseline * 2;
+                                height: $baseline * 2;
+                                background-color: $brand-secondary-25;
+                                padding-top: 10px;
+                                text-align: center;
+                                float: left;
+                                margin-right: $baseline;
+                            }
+                        }
+
+                        > .panel-heading + .panel-collapse > .panel-body {
+                            border-top: 0;
+                            padding: $baseline $baseline * 3 $baseline $baseline * 4.5;
+                            background-color: white;
+                        }
+                    }
+
+                    a.collapsed {
+                        padding: $baseline * 1.5;
+                        display: block;
+                        color: $text-color;
+                        margin-bottom: 0;
+
+                        &:hover {
+                            background-color: $brand-secondary-25;
+                            -moz-transition: $trans;
+                            -o-transition: $trans;
+                            -webkit-transition: $trans;
+                            transition: $trans;
+
+                            > .patch {
+                                background-color: white;
+                                -moz-transition: $trans;
+                                -o-transition: $trans;
+                                -webkit-transition: $trans;
+                                transition: $trans;
+                            }
+                        }
+                    }
+
+                    a.listitem {
+                        padding: $baseline * 1.5;
+                        display: block;
+                        color: $text-color;
+                        margin-bottom: 0;
+
+                        &:hover {
+                            background-color: $brand-secondary-25;
+                        }
+                    }
+                }
+
+                .panel + .panel {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

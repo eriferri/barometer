@@ -1,0 +1,71 @@
+
+// base
+$baseline: 24px;
+$base-font-size: 16px;
+
+.brand_logo{
+	max-width: $baseline * 3.75;
+}
+
+// Effects
+$trans: all .5s ease;
+
+/*------ Colors --------*/
+$body_bg_color: #fff;
+$text-color: #000;
+$text-color-light: mix(#3b3b3b, #fff, 77%);
+
+$brand-logo: #00bce2; // light blue
+$brand-logo-75: mix($brand-logo, #fff, 75%);
+$brand-logo-50: mix($brand-logo, #fff, 50%);
+$brand-logo-25: mix($brand-logo, #fff, 25%);
+$brand-logo-10: mix($brand-logo, #fff, 15%);
+$brand-logo-05: mix($brand-logo, #fff, 5%);
+
+$brand-primary: #3c0095; // FHI blue
+$brand-primary-75: mix($brand-primary, #fff, 75%);
+$brand-primary-50: mix($brand-primary, #fff, 50%);
+$brand-primary-25: mix($brand-primary, #fff, 25%);
+$brand-primary-10: mix($brand-primary, #fff, 10%);
+$brand-primary-05: mix($brand-primary, #fff, 5%);
+
+$brand-secondary: #f07c26; // FHI Orange
+$brand-secondary-50: mix($brand-secondary, #fff, 50%); 
+$brand-secondary-25: mix($brand-secondary, #fff, 25%); 
+$brand-secondary-10: mix($brand-secondary, #fff, 10%); 
+$brand-secondary-05: mix($brand-secondary, #fff, 5%); 
+$brand-secondary-button: #f3a255;
+
+$brand-red: #b73844;  // Red
+$brand-red-75: mix($brand-red, #fff, 75% );
+$brand-red-50: mix($brand-red, #fff, 50% );
+$brand-red-25: mix($brand-red, #fff, 25%);
+$brand-red-10: mix($brand-red, #fff, 10%);
+$brand-red-05: mix($brand-red, #fff, 5%);
+
+$brand-yellow: #ffffbc;  // Yellow
+$brand-yellow-50: mix($brand-yellow, #fff, 70%);
+$brand-yellow-25: mix($brand-yellow, #fff, 40%);
+$brand-yellow-05: mix($brand-yellow, #fff, 10%);
+$brand-yellow-box: #fffece;
+
+$brand-purple: #beb3e3;  // Purple
+$brand-purple-50: mix($brand-purple, #fff, 50%);
+$brand-purple-25: mix($brand-purple, #fff, 25%);
+$brand-purple-10: mix($brand-purple, #fff, 10%);
+$brand-purple-05: mix($brand-purple, #fff, 5%);
+$brand-purple-box: #fffece;
+
+$brand-green: #5b9594;  // Green
+$brand-green-50: mix($brand-green, #fff, 50%);
+$brand-green-25: mix($brand-green, #fff, 25%);
+$brand-green-10: mix($brand-green, #fff, 10%);
+$brand-green-05: mix($brand-green, #fff, 5%);
+
+$brand-supportive: #97999b; // FHI Cool gray
+$brand-supportive-50: mix($brand-supportive, #fff, 50%);
+$brand-supportive-25: mix($brand-supportive, #fff, 25%);
+$brand-supportive-10: mix($brand-supportive, #fff, 10%);
+$brand-supportive-05: mix($brand-supportive, #fff, 5%);
+$brand-supportive-light: #e5e5e5; // Light gray
+

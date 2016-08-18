@@ -1,0 +1,140 @@
+/* --------- Forms ------- */
+@import '_variables.scss';
+	
+label {
+	font-weight: normal;
+	margin-bottom: $baseline;
+}
+
+label span { /* for mandatory fields*/
+	margin-left: $baseline/3;
+	color: $brand-red;
+}
+
+.form-group {
+	margin-top: $baseline;
+	margin-bottom: $baseline * 1.5;
+
+	.radio-btn {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+		float: left;
+		margin: 0 $baseline/2 0 0;
+		cursor: pointer;
+		position: relative;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		border-radius: 100%;
+		border: 1px solid red;
+		/*box-shadow: 0 0 1px #ccc;*/
+		background: #fff;
+	}
+}
+
+.listwrap .sidebar .form-group {
+	margin-top: 0;
+}
+
+.input-group-addon {
+	border-radius: 0;
+	border: 1px solid $brand-supportive!important;
+	background-color: $brand-logo-25;
+
+	&:last-child {
+		border-left: none!important;
+	}
+
+	&.disa { //disabled button
+		background-color: $brand-supportive-light;
+		border-color: $brand-supportive-light;
+
+		&:hover {
+			background-color: $brand-supportive-light;
+			border-color: $brand-supportive-light;
+			cursor: default;
+		}
+	}
+}
+
+.form-control {
+	border-radius: 0;
+	border-color: $brand-supportive;
+	box-shadow: none;
+	font-size: $base-font-size;
+	height: 44px;
+}
+
+.form-control:focus{
+	border-color: $brand-logo-50;
+	background-color: $brand-yellow-25;
+}
+
+input[type="text"] {
+	height: 44px;
+}
+
+select {
+}
+
+.helptext{
+	padding-left: $baseline * 2;
+}
+
+.double-top {
+	margin-top: $baseline * 3;
+
+}
+
+.myRadio { /* styling radio buttons as buttons */
+    position: relative;
+    margin: 0;
+    width: 100%;
+    max-width: 220px;
+    height: 44px;
+    margin-top: $baseline * 1.5;
+
+    label, input {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    input[type="radio"] {
+        opacity: 0.01;
+        z-index: 100;
+    }
+
+    input[type="radio"]:checked + label, .Checked + label {
+        background: $brand-primary;
+        color: white;
+        -moz-transition: $trans;
+        -o-transition: $trans;
+        -webkit-transition: $trans;
+        transition: $trans;
+    }
+
+    label {
+        padding: $baseline/2 $baseline;
+        border: 3px solid $brand-primary;
+        cursor: pointer;
+        z-index: 90;
+        text-align: center;
+        background-color: white;
+        color: $text-color;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+
+    label:hover {
+        background: $brand-primary;
+        color: white;
+        -moz-transition: $trans;
+        -o-transition: $trans;
+        -webkit-transition: $trans;
+        transition: $trans;
+    }
+}

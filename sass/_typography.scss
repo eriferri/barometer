@@ -1,0 +1,174 @@
+@import '_variables.scss';
+	
+html, body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+body {
+	background-color: $body_bg_color;
+	color: $text-color;
+	font-family: 'Neuzeit S LT W01 Book', sans-serif;
+	font-size: $base-font-size;
+	line-height: $baseline;	
+}
+
+p, li, dt, dd {
+	font-size: $base-font-size;
+	line-height: $baseline;
+	letter-spacing:0.5px;
+}
+
+p.lede {
+	font-size: $baseline;
+	line-height: $baseline + 5px;
+	margin-bottom: $baseline * 2;
+	font-weight: 300;
+}
+
+p.tag {
+	color: $text-color-light;
+	margin-bottom: $baseline;
+}
+
+h1 {
+	font-size: $base-font-size *2;
+	line-height: $baseline * 2;
+	font-weight: 300;
+	margin-bottom: $baseline;
+}
+
+h2 {
+	font-size: 21px;
+	line-height: $baseline * 1.5;
+	margin-bottom: $baseline;
+	font-weight: 400;		
+}	
+
+h3 {
+	font-size: 18px;
+	line-height: $baseline;
+	font-weight: 600;
+	margin-bottom: $baseline;
+}
+
+h3.tags {
+	margin: 0;
+	color: $text-color-light;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: $baseline;
+	font-weight: 300;
+}
+
+main a {
+    color: $brand-primary; // global link color
+    text-decoration: none;
+    margin-bottom: 2px;
+    border-bottom: 1px solid $brand-logo;
+    //display: inline-block; // KG: Can this be removed?
+
+    &:hover {
+        color: $brand-logo;
+        //transition: $trans;
+        text-decoration: none;
+    }
+
+    &:visited, &:focus {
+        text-decoration: none;
+    }
+
+    &.user {
+        color: $brand-logo;
+        border-bottom-color: transparent;
+
+        &:hover {
+            border-bottom-color: $brand-logo;
+            -moz-transition: $trans;
+            -o-transition: $trans;
+            -webkit-transition: $trans;
+            transition: $trans;
+        }
+    }
+}
+
+.bodytext {
+
+	ul {
+		margin: 0;
+		padding: 10px 0 0 17px;
+
+		li {
+		}
+	}
+}
+.centered 	{
+		text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+figure {
+
+	&.topimg {
+		margin-bottom: $baseline  * 2;
+		margin-top: $baseline * 2;
+	}
+
+	figcaption {
+		text-align: right;
+		font-style: italic;
+		margin-top: $baseline/2;
+		margin-bottom: $baseline * 1.5;
+		font-size: $base-font-size/1.2;
+	}
+}
+
+blockquote {
+	font-size: $baseline;
+	font-style: italic;	
+	border-left: 0;
+	padding-left: $baseline * 1.5;
+	line-height: $baseline + 5px;
+	font-weight: 400;
+	margin: $baseline*1.5 0;
+
+}
+
+.type { // used for stikktittel and category etc
+	text-transform: uppercase;
+	color: $text-color-light;
+	letter-spacing: 1px;
+}
+
+table.table {
+	margin-bottom: $baseline * 2;
+}
+
+.table-striped {
+
+	thead {
+		background-color: $brand-logo-10;
+	}
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: $brand-logo-10;
+}
+
+.social {
+	text-align: right;
+	
+	.fa {
+		margin-right: 8px;
+	}
+
+	span + span {
+		margin-left: $baseline/2;
+	}
+}
+	

@@ -1,0 +1,380 @@
+/* ----- styles only used in collaboration and search ----- */
+@import '_variables.scss';
+
+#workspace {
+
+	.container-fluid {
+		// width: 1440px;		
+		// max-width: 1680px;
+	}	
+	.quickLaunch {
+		min-width: 220px;
+	}
+	.inWrap {
+		p.siteDesc {
+			margin-bottom: $baseline * 3;
+		}
+		section {
+			margin-bottom: $baseline;
+			//margin-top: $baseline;
+			h3 {
+				margin-bottom: $baseline *2;
+				a {
+
+				}
+			}
+		}
+		section + section {
+			margin-top: $baseline * 3;
+		}
+		section.depnews {
+			
+			ul {
+				padding-left: 0;
+				margin-left: 0;
+				list-style-type: none;
+			}
+			
+		}
+		section.shareDoc {
+			img {
+				//width: 105%;
+			}
+		} 
+	}
+	.rightBar {
+		background-color: $brand-logo-10;
+		padding: $baseline/2 $baseline $baseline * 1.5 $baseline;
+
+		h2.rightHeader {
+			display: inline-block;
+			width: 78%;			
+		}
+		span.editLink {
+			display: inline-block;
+			width: 20%;
+			text-align: right;
+		}
+		
+		section {
+			margin-bottom: $baseline * 2; 
+			&:last-child {
+				margin-bottom: $baseline;
+			}
+			h4 {
+			font-weight: bold;
+			font-size: $base-font-size;
+			margin-bottom: $baseline;	
+			}
+		}
+		section.owner {
+			.contact {
+				.bgwrap {
+					padding: $baseline;
+					margin-bottom: 0;
+				}
+			}
+		}			
+		
+		section.metaDetails {
+			h4 {
+				margin-top: $baseline;
+				margin-bottom: 0;
+			}
+			h4:first-child {
+				margin-top:0;
+			}
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+		}	
+		section.relatedRooms {
+			p.description {
+				display: none;
+			}
+		}
+		section.getStarted {
+			img {
+				max-width: 100%;
+			}
+		}
+		
+	}
+}
+	
+.wrapper {
+	padding: $baseline;	
+	margin-bottom: $baseline * 2;
+	float: left;
+	width: 100%;
+	background-color: $brand-logo-05;
+	
+    h1{
+		margin: $baseline * 2 0 $baseline * 3 0;
+	}
+	
+	h3.sect {
+		margin-bottom: $baseline * 2;
+		margin-top: $baseline * 3;
+		border-bottom: 1px solid $brand-supportive;
+		padding-bottom: $baseline *2;
+	}		
+
+    section.titleDescr, section.siteSecurity, section.siteUsers {
+	    margin-bottom: $baseline * 5;
+    }
+
+    section.siteSecurity {
+	    ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0; 
+
+		    li {
+			    margin-bottom: $baseline;
+		    }
+	    }
+    }
+
+    .createSite	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			border-top: 1px solid $brand-supportive;
+			padding: $baseline * 2;
+
+			&:first-child {
+				border-top: none;
+				padding-top: 0;	
+			}
+			&:last-child{
+				border-bottom: 1px solid $brand-supportive;
+			padding: $baseline * 2;
+
+			}
+			img {
+				margin-right: $baseline *2;
+				max-width: 100%;
+				display: inline-block;
+				margin-top: $baseline/4; 
+			}
+			
+			.description {				
+				h4 {
+					margin-top: 0;
+				}
+			}		
+		}
+	}
+
+	.controls {
+		float: right;
+		margin-top: $baseline * 2;
+				
+		.btn + .btn {
+			margin-left: $baseline;
+		}
+	}
+	a.input-group-addon {
+		border-left: 0!important;
+		&:hover {
+			background-color: $brand-logo-50;
+		}
+		&.disa:hover {
+			background-color: $brand-supportive-light;
+			border-color: $brand-supportive-light;
+			cursor: default;
+		}
+	}
+	.introtext {
+		margin-bottom: $baseline * 2;
+		
+	}
+	.helptext {
+		margin-top: 56px;
+	}
+	img.terms {
+		width: 22px;
+		height: 22px;
+	}
+}
+
+nav.alphabetic {
+	margin:  0 0 $baseline * 2 0;
+	
+    ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		display: inline;
+		
+        li {
+			text-transform: uppercase;
+			padding: 0;
+			
+			 a {
+			 	color: $text-color;
+			 	border-bottom: 0;
+			 	margin-bottom: 0;
+			 	text-align: center;
+			 	padding: $baseline;
+			 	width: 51px;
+			 	
+                 &.active {
+			 		font-weight: bold;
+			 	}
+			 }
+		}
+	}
+}
+
+.generic { /* everyting wrapped inside .generic-html is used across sites and pages as a generic list style, so modify with caution*/ 
+	margin-bottom: $baseline;
+}
+
+.siteicon {
+	display: inline-block;
+	width: $baseline * 1.5;
+	height: $baseline * 1.5;
+	vertical-align: top;
+	text-align: center;
+	color: #fff;
+	margin-right: $baseline;
+	padding: 5px 0 0 2px;
+	margin-top: 5px;
+
+	&.generic {
+		background-color: $brand-logo;
+	}
+	
+    &.project {
+		background-color: $brand-secondary;				
+	}
+	
+    &.department {
+		background-color: $brand-primary;	
+	}
+	
+    &.team {
+		background-color: $brand-green;
+	}
+	
+    .fa-cubes {
+		font-size: 16px;
+	}		
+}
+
+.createSite .siteicon {
+	width: $baseline * 4;
+	height: $baseline * 4;
+	padding-top: $baseline + 5px;
+	margin-right: $baseline;
+	margin-bottom: $baseline;
+
+	.fa-cubes {
+		font-size: 30px;
+	}
+}
+
+.documenticon {
+	display: inline-block;
+	width: $baseline * 2;
+	height: $baseline * 2;
+	vertical-align: top;
+	text-align: center;
+	color: #fff;
+	margin-right: $baseline;
+	//padding: 10px 0 0 3px;
+	margin-top: 5px;
+
+	img {
+		height: $baseline * 1.5;
+		width: $baseline * 1.5; 
+	}
+	
+    &.intranett {
+			background-color: $brand-logo;
+			padding-top: 5px;
+	}		
+}
+
+.itembody {
+	display: inline-block;
+	width: calc(100% - 65px);
+	
+	p {
+		margin-bottom: 0;
+	}
+	
+    .type {
+		font-size: 70%;
+		letter-spacing: 1px;
+	}
+}
+	
+.collegue { 
+	background-color: #fff;
+	padding: $baseline * 1.5;
+	margin-right: $baseline;
+	
+    &:last-child {
+		margin-right: 0;
+	}
+
+	.userimage {
+		display: inline-block;
+		width: $baseline * 5.5;
+		vertical-align: top;
+		//height: $baseline * 2;
+		
+        img {
+			width: 95px;
+		}
+	}
+	
+    .userdetails {
+		display: inline-block;
+		width: calc(100% - 140px);
+		margin-left: $baseline;
+		
+        h2 {
+			margin: 0;
+			
+            a {
+				color: $brand-logo;
+				border-bottom-color: transparent;
+				
+				&:hover {
+					border-bottom: 1px solid $brand-logo;
+				}
+			}			
+		}
+		
+        p {
+			margin: 0;
+		}
+		
+        p.department {
+			margin-bottom: $baseline/2;
+		}
+	}
+}	
+
+section.siteCatalogue {
+	padding-left: $baseline/2;
+}
+
+section.aboutSite {
+	background-color: $brand-supportive-light;
+	padding: $baseline;
+}
+
+.docLib {
+	background-color: $brand-secondary;
+	margin: $baseline 0;
+	padding: $baseline/2;
+}

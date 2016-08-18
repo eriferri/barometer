@@ -1,0 +1,154 @@
+/* ----- frontpage news ----- */
+@import '_variables.scss';
+
+#news {
+
+    header {
+        background-color: $brand-logo-50;
+    }
+
+    .content {
+        padding-top: 0;
+        background-color: $brand-logo-05;
+        border-left: 3px solid $brand-logo-25;
+    }
+
+    .hovereffect {
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+
+        img {
+            display: block;
+            position: relative;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out; //linear;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            padding: $baseline * 1.5;
+
+            .img-filter {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                top: 0;
+                left: 0;
+                opacity: 1;
+                background-color: rgba(0,91,153,0.5);
+                -moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+        }
+
+        h2 {
+            color: #fff;
+            position: relative;
+            -moz-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+
+        .date {
+            color: #fff;
+            font-size: 80%;
+            letter-spacing: 1px;
+            padding-top: $baseline/2;
+        }
+
+        .social {
+            color: #fff;
+            margin-top: $baseline/2;
+            font-size: 80%;
+            text-align: right;
+        }
+
+        p.info {
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            margin-top: $baseline/2;
+            z-index: 100;
+        }
+
+        &:hover .overlay .img-filter {
+            background-color: rgba(0,91,153,0.8);
+        }
+    }
+
+    .story {
+        padding: $baseline;
+        display: block;
+        color: $text-color;
+        margin-bottom: 0;
+
+        &:hover {
+            background-color: darken($brand-logo-05, 5%);
+        }
+
+        // &.eBg {
+        //     background-color: darken($brand-logo-05, 10%);
+
+        //     &:hover {
+        //         background-color: darken($brand-logo-05, 15%);
+        //     }
+        // }
+
+        .type, .date {
+            font-size: 80%;
+            color: $text-color-light;
+        }
+
+        h3 {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: $baseline/2;
+            line-height: $baseline;
+        }
+
+        img {
+            margin: $baseline 0;
+        }
+
+        .social {
+            text-align: right;
+            font-size: 80%;
+            color: $brand-logo-75;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

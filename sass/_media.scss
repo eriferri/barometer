@@ -1,0 +1,266 @@
+﻿@import '_variables.scss';
+
+@media (min-width: 1200px) {
+	.container-fluid {
+		max-width: 1440px;
+	}
+}
+
+/* Collapsing gutter, no padding between columns 	*/
+@media screen and (min-width: 992px) {
+	.row.no-gutter [class*='col-']:not(:first-child), .row.no-gutter [class*='col-']:not(:last-child) {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.row.no-gutter [class*='col-']:first-child {
+		padding-left:  $baseline/2;
+	}
+	.row.no-gutter [class*='col-']:last-child {
+		padding-right:  $baseline/2;
+	}	
+	
+	.ng-l {
+		padding-left: 0;
+		
+	}
+	.ng-r {
+		padding-right: 0;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	#site {
+		.module {
+			min-height: 190px;		
+
+			a.blocklink {
+				min-height: 190px;
+	
+			}
+		}	
+	}
+	
+	#workspace {
+		.quickLaunch, .rightBar {
+			word-break: break-all;
+					
+			nav.sidebar {
+				padding-left: $baseline!important;
+			}
+		}		
+	}
+}
+@media screen and (min-width: 1200px) {
+	#site {
+		.module {
+			min-height: 170px;			
+
+			a.blocklink {
+				min-height: 170px;
+			}
+		}
+		
+	}
+	#news .eBg {
+            background-color: darken($brand-logo-05, 10%);
+
+            &:hover {
+                background-color: darken($brand-logo-05, 15%);
+            }
+        }
+}	
+
+@media screen and (min-width: 768px) {	
+
+	a.blocklink {
+		min-height: 150px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    
+    a.blocklink {
+        min-height: $baseline * 3.5;
+        padding: $baseline * 0.5 !important;
+
+        h3 {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 5px !important;
+            margin-top: 5px !important;
+            overflow: hidden;
+            -ms-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        p {
+            font-size: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+	.wrapper h1 {
+		margin: $baseline 0;
+	}
+	
+    .wrapper h3.sect {
+		margin-bottom: 0;
+		margin-top: $baseline;
+	}
+
+	.wrapper .createSite ul li {
+		padding: $baseline;
+		
+        &:last-child {
+			padding: $baseline;
+		}
+		
+        &:first-child {
+			padding: $baseline;
+		}
+	}
+	#latest .date {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 1220px){
+
+	.overlay {
+		padding-top: $baseline!important;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+	#news .column-padder  {
+		padding-left: $baseline/2!important;
+	} 
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.cd-top {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.cd-top {
+		height: 60px;
+		width: 60px;
+		right: 30px;
+		bottom: 30px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.container-fluid > .navbar-collapse {
+		margin-left: -10px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#blog .blocklink figure {
+		margin-right: 0!important;
+	}
+	.blogger {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	#media {
+
+		.content {
+			padding: 0!important;
+
+			span.date {
+				text-align: left!important;
+			}	
+		}
+		
+	}
+
+	#newsfeed {
+
+		.item {
+			padding: 0!important;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+    
+    .navbar-nav {
+        margin: 0;      
+    }
+    
+    .navbar-form {
+        margin: $baseline/2 0;
+    }
+}
+
+@media (min-width: 768px){
+    
+    .navbar {
+        min-height: 50px;
+    }
+    
+    /*.navbar-nav > li > a {
+        padding: $baseline * .75 $baseline/2 $baseline * .75 $baseline/2
+    }  */
+}
+
+@media (max-width: 768px) {
+    .megamenu {
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    .megamenu > li {
+        margin-bottom: 30px; 
+    }
+
+    .megamenu > li:last-child {
+        margin-bottom: 0; 
+    }
+
+    .megamenu.dropdown-header {
+        padding: 3px 15px !important; 
+    }
+
+    .navbar-nav .open .dropdown-menu .dropdown-header {
+        color: #fff; 
+    } 
+
+    .listwrap {
+        padding: 0!important;
+    }  
+
+    .listwrap > li {
+        margin-bottom: 0!important;
+    }
+
+    .megamenu >li ul > li ul > li ul  {
+        padding-left: $baseline!important;
+        margin-left: 0; 
+    }
+}
+
+@media (min-width: 768px) {
+	#alert .modal-dialog {
+	    width: 620px;
+	    margin: 30px auto;
+	    
+	}
+}

@@ -1,0 +1,99 @@
+
+#s4-workspace {
+	max-width: 1440px;
+	margin: $baseline auto;
+	
+	#s4-bodyContainer {
+		margin: 0 $baseline/2;
+		background-color: red;
+		
+		&:after {
+			clear: both;
+			content: "";
+	  		display: table;
+		}
+	}
+}
+#sideNavBox, #metaDataWebPart {
+	padding: $baseline;
+}
+#sideNavBox {
+	background-color: $brand-logo-10;
+	width: 220px;
+	height: 400px;
+	float: left;
+
+	&:after {
+		clear: both;
+		content: "";
+  		display: table;
+	}
+}
+#contentBox {
+	background-color: orange;
+	float: left;
+	width: calc(100% - 220px);
+
+	&:after {
+		clear: both;
+		content: "";
+  		display: table;
+	}
+
+	#DeltaPlaceHolderMain {
+		float: left;
+		// max-width: calc(100% - 340px);
+		// min-width: 600px;
+		&:after {
+			clear: both;
+			content: "";
+  			display: table;
+		}
+		
+	}	
+	.maincontent {
+		float: left;
+		max-width: calc(100% - 340px);
+		min-width: 600px;
+		background-color: #fff;
+		overflow-x: scroll;
+		padding: $baseline;
+	}
+
+	#metaDataWebPart {
+		width: 340px;
+		background-color: $brand-logo-10;
+		float: right;	
+	}
+}
+
+@media screen and (max-width: 1199px) {
+
+	.maincontent {
+		max-width: 100%!important;
+	}
+	#metaDataWebPart {
+		width: 100%!important;
+		float: none;
+
+		&:after {
+			clear: both;
+			content: "";
+			display: table;
+		}
+	}
+	.owner, .metaDetails {
+		width: calc(50%-20px);
+		float: left;
+	}
+	.owner {
+		margin-right: $baseline/2;
+	}
+	.metaDetails {
+		margin-left: $baseline/2;
+	}
+}
+
+.primaryButton {
+	
+}

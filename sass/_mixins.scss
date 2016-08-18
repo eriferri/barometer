@@ -1,0 +1,15 @@
+// Mixins
+@import '_variables.scss';
+	
+@mixin box {
+	background-color: $brand-yellow-box;
+	padding: $baseline/4 $baseline $baseline $baseline * 1.5;
+	margin-bottom: $baseline;
+}
+
+
+@mixin contact {
+	background-color: white;
+	padding: $baseline * 1.5 $baseline $baseline $baseline * 1.5;
+	margin-bottom: $baseline;
+}

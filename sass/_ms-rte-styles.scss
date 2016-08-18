@@ -1,0 +1,159 @@
+/* Rich text editor overrides and supplements */
+
+
+.ms-rteStyle-Normal, p.ms-rteElement-P, h1.ms-rteElement-H1, h2.ms-rteElement-H2, h3.ms-rteElement-H3, h4.ms-rteElement-H4, h1.ms-rteElement-H1B, h2.ms-rteElement-H2B,  
+h3.ms-rteElement-H3B, h4.ms-rteElement-H4B, .ms-rteStyle-Quote, .ms-rteStyle-IntenseQuote, .ms-rteStyle-Emphasis, .ms-rteStyle-IntenseEmphasis, .ms-rteStyle-References, 
+.ms-rteStyle-IntenseReferences, .ms-rteStyle-Accent1, .ms-rteStyle-Accent2, .ms-rteStyle-Caption {
+	color: $text-color;
+	font-family: 'Source Sans Pro', Verdana, Helvetica, Arial, sans-serif;
+}
+
+.ms-rteStyle-Normal {
+	-ms-name:"Normal";
+	font-size: $base-font-size;
+	line-height: $baseline;
+	letter-spacing:0.5px;
+	margin-bottom: $baseline/2;
+}
+
+p.ms-rteElement-P {
+	-ms-name:"Avsnitt";
+	font-size: $base-font-size;
+	line-height: $baseline;
+	letter-spacing:0.5px;
+	margin-bottom: $baseline/2;
+
+}
+
+h1.ms-rteElement-H1 {
+	-ms-name: "Overskrift 1";
+	font-size: $base-font-size *2;
+	line-height: $baseline * 2;
+	font-weight: 300;
+	margin-top: $baseline;
+	margin-bottom: $baseline;	
+}
+
+h2.ms-rteElement-H2 {
+	-ms-name: "Overskrift 2";
+	font-size: 21px;
+	line-height: $baseline * 1.5;
+	margin-top: $baseline;
+	margin-bottom: $baseline;
+	font-weight: 400;		
+}
+
+h3.ms-rteElement-H3 {
+	-ms-name: "Overskrift 3";
+	font-size: 18px;
+	line-height: $baseline;
+	font-weight: 600;
+	margin-top: $baseline;
+	margin-bottom: $baseline;
+}
+
+h4.ms-rteElement-H4 {
+	-ms-name: "Overskrift 4";
+	font-size: 18px;
+	line-height: $baseline;
+	font-weight: 300;
+	margin-top: $baseline/2;
+	margin-bottom: $baseline/2;
+}
+
+h1.ms-rteElement-H1B {
+	-ms-name: "Overskrift 1 - alternativ";
+	font-size: $base-font-size *2;
+	line-height: $baseline * 2;
+	font-weight: 300;
+	margin-top: $baseline;
+	margin-bottom: $baseline;
+}
+
+h2.ms-rteElement-H2B {
+	-ms-name: "Overskrift 2 - alternativ";
+	font-size: 21px;
+	line-height: $baseline * 1.5;
+	margin-top: $baseline;
+	margin-bottom: $baseline;
+	font-weight: 400;		
+}
+
+h3.ms-rteElement-H3B {
+	-ms-name: "Overskrift 3 - alternativ";
+	font-size: 18px;
+	line-height: $baseline;
+	font-weight: 600;
+	margin-top: $baseline;
+	margin-bottom: $baseline;
+}
+
+h4.ms-rteElement-H4B {
+	-ms-name: "Overskrift 4 - alternativ";
+	font-size: 18px;
+	line-height: $baseline;
+	font-weight: 300;
+	margin-top: $baseline/2;
+	margin-bottom: $baseline/2;
+}
+
+.ms-rteStyle-Quote, .ms-rteStyle-IntenseQuote {
+	-ms-name:"Sitat";
+	font-size: $baseline;
+	font-style: italic;	
+	padding-left: $baseline * 1.5;
+	line-height: $baseline + 5px;
+	font-weight: 400;
+	margin: $baseline*1.5 0;
+}
+.ms-rteStyle-IntenseQuote {
+	text-decoration: underline;
+}
+
+.ms-rteStyle-Emphasis {
+	-ms-name:"Utheving";
+	font-style: italic;	
+}
+
+.ms-rteStyle-IntenseEmphasis {
+	-ms-name:"Sterk utheving";
+	font-style: italic;	
+}
+
+.ms-rteStyle-References {
+	-ms-name:"Referanse";
+	color: $text-color-light;
+}
+
+.ms-rteStyle-IntenseReferences {
+	-ms-name:"Sterk referanse";
+	color: $text-color-light;
+
+}
+
+.ms-rteStyle-Accent1 {
+	-ms-name:"Uthevingsfarge 1";
+	color: $text-color-light;
+}
+
+.ms-rteStyle-Accent2 {
+	-ms-name:"Uthevingsfarge 2";
+	color: $text-color-light;
+}
+
+.ms-rteStyle-IntenseQuote, .ms-rteStyle-IntenseEmphasis, .ms-rteStyle-IntenseReferences {
+	text-decoration:underline;
+}
+
+.ms-rteStyle-Caption {
+	-ms-name: "Bildetekst";
+	text-align: right;
+	font-style: italic;
+	margin-top: $baseline/2;
+	margin-bottom: $baseline * 1.5;
+	font-size: $base-font-size/1.2;
+}
+
+
+
+/* END RTE-overrides */

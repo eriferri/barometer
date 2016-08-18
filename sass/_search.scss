@@ -1,0 +1,90 @@
+/* -----   Search Page----- */
+@import '_variables.scss';
+	
+	.articlewrap {
+		background-color: $brand-logo-05;
+	}
+
+.cTypeFilters {
+    list-style-type: none;
+    margin: 1px 0 0 0;
+    padding: $baseline * 2 0 0 0;
+    height: 100px;
+    background-color: white;
+    margin-right: -10px;
+
+    li {
+        display: inline;
+        margin-right: -2px;
+
+
+        a {
+            font-size: 18px;
+            line-height: $baseline;
+         
+               padding: ($baseline * 2) - 2px $baseline ($baseline * 2) - 1px $baseline;
+            -moz-transition: $trans;
+            -o-transition: $trans;
+            -webkit-transition: $trans;
+            transition: $trans;
+            display: inline;
+            color: $text-color;
+            border-bottom: none;
+
+            &:hover {
+                background-color: $brand-logo-50;
+            }
+
+            &.active {
+                background-color: $brand-logo-50;
+            }
+        }
+    }
+}
+
+#filters {
+	padding-left: $baseline;
+	padding-bottom: $baseline * 2;
+
+	ul {
+		margin-bottom: $baseline * 2;
+			
+		li {
+			list-style-type: none;
+			i {
+			font-style: normal;
+			color: $text-color-light;
+			margin-left: $baseline/2;
+			}				
+		}
+	}
+}
+
+section.results {
+	//background-color: #fff;
+	
+    .query {
+		padding: $baseline * 1.5 0 $baseline * 2 $baseline ;			
+	}
+	
+    section.best-bet {
+		padding: $baseline * 1.5 $baseline * 1.5 $baseline/2 $baseline * 1.5;
+		background-color: #fff;
+		margin: 0 0 $baseline $baseline;
+		border-left: 2px solid $brand-logo-75;			
+
+	}
+	
+    section.collegues {
+		margin: 0 0 $baseline $baseline;
+		border-left: 2px solid transparent;				
+	}
+	
+    section.generalresults {
+		padding: $baseline * 1.5 $baseline * 1.5 $baseline $baseline * 1.5;
+		background-color: #fff;
+		margin: 0 0 $baseline $baseline;
+		border-left: 2px solid transparent;			
+	}		
+}
+

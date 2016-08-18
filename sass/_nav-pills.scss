@@ -1,0 +1,30 @@
+/* ------ Nav Pills ----- */
+@import '_variables.scss';
+	
+ul.nav-pills {
+	margin: $baseline 0;
+	
+    > li {
+		margin-right: $baseline;
+	
+        	> a {
+    		border-radius: 0;
+    		background-color: $brand-logo-25;
+    		color: $text-color;
+    		min-width: $baseline * 6;
+    		text-align: center;
+    		height: $baseline * 3;
+    		padding: $baseline $baseline * 1.5;
+    		border-bottom: none;
+
+    		&:hover {
+    			background-color: $brand-logo-50;
+    		}
+		}
+		
+        &.active a, &.active a:hover {
+    		background-color: $brand-logo-50;
+    		color: $text-color;
+    	}
+	}
+}
