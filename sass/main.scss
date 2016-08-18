@@ -46,15 +46,7 @@ main, footer {
     transition: 0.5s ease-in-out;
 }
 body{
-	border-width: 0 10px 0 0;
-    border-style: solid;
-    border-color: white;
-    border-image: linear-gradient(to bottom, #3c0095, #f900c5) 1 100%;
-    border-image-source: linear-gradient(rgb(60, 0, 149), rgb(249, 0, 197));
-    border-image-slice: 1 100%;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
+	background-color: lighten( $brand-primary, 70% ) ;
 }
 
 

@@ -6,6 +6,7 @@
 	}
 }
 
+
 /* Collapsing gutter, no padding between columns 	*/
 @media screen and (min-width: 992px) {
 	.row.no-gutter [class*='col-']:not(:first-child), .row.no-gutter [class*='col-']:not(:last-child) {
