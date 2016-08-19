@@ -137,13 +137,28 @@ table.table {
   max-width: 135px; }
 
 /*------ Colors --------*/
+/*.neste  { position: relative;
+    border: 1px solid #3c0095;
+    padding: 10px 15px;
+    top: 0;
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    overflow: hidden;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    vertical-align: middle;
+}*/
 .btn {
+  border: 1px solid #3c0095;
   border-radius: 0;
   margin-bottom: 36px;
   font-size: 24px;
-  line-height: 36px;
-  padding: 18px 36px;
-  letter-spacing: 1px; }
+  /*line-height: $baseline;*/
+  padding: 18px 18px;
+  letter-spacing: 1px;
+  font-size: 18px; }
   .btn:focus {
     outline: none; }
   .btn:active, .btn.active {
@@ -167,14 +182,13 @@ table.table {
     background-color: #f07c26; }
   .btn .fa {
     margin-right: 36px; }
-  .btn.btn-primary {
-    background-color: #f07c26;
-    border: 4px solid #f07c26;
+  .btn.neste {
+    background-color: #3c0095;
+    border: 1px solid #3c0095;
     color: white; }
-    .btn.btn-primary:hover {
+    .btn.neste:hover {
       background-color: white;
-      border: 4px solid #f3a255;
-      color: #f07c26;
+      color: #3c0095;
       transition: all .5s ease; }
   .btn.btn-secondary {
     background-color: white;

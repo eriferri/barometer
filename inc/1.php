@@ -14,7 +14,7 @@ produktgrupper?</div>
     </ul>
   </div>
   <div class="row" id="nav">
-   <div class="forrige col-sm-1 ">Forrige</div>
-   <div class="neste col-sm-1 col-sm-offset-4 ">Neste</div>
+   <div class="btn forrige col-sm-1 ">Forrige</div>
+   <div class="btn neste col-sm-1 col-sm-offset-4 ">Neste</div>
   </div>
 </section>
