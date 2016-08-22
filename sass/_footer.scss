@@ -2,89 +2,11 @@
 @import '_variables.scss';
 
 footer {
-    
-    padding: $baseline *2 0 $baseline * 3 0;
+    padding: 0 90px;
     min-height: $baseline * 8;
-
+    font-size: 14px;
     .logo {
-        width: 14%;
-        max-width: 250px;
-        margin-bottom: $baseline * 1.5;
-    }
-
-    h3 {
-        margin-bottom: $baseline * 2;
-    }
-
-    h3.footheading {
-        text-transform: uppercase;
-        font-weight: normal;
-        font-size: $base-font-size;
-    }
-
-    nav {
-
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-
-            li {
-                line-height: $baseline * 2;
-
-                a {
-                    color: white;
-                    -moz-transition: $trans;
-                    -o-transition: $trans;
-                    -webkit-transition: $trans;
-                    transition: $trans;
-
-                    &:hover {
-                        color: white;
-                        padding-bottom: 2px;
-                    }
-                }
-            }
-        }
-    }
-
-    nav.icons {
-        ul {
-            margin-top: 0;
-
-            li {
-                line-height: $baseline * 2;
-                margin-left: -$baseline *2;
-
-                .icon {
-                    width: $baseline * 1.5;
-                    margin-right: $baseline/2;
-                    margin-top: 8px;
-                }
-
-                &.weekmenu {
-                    margin-left: 0;
-                }
-            }
-        }
-
-        .arrow-right-foot {
-            width: 21px;
-            height: 8px;
-            margin-left: $baseline;
-        }
-    }
-
-    nav.multicol {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-        -moz-column-gap: $baseline * 2;
-        -webkit-column-gap: $baseline * 2;
-        column-gap: $baseline * 2;
-    }
-
-    .insta {
-        max-width: 150px;
-    }
+        max-width: 40px;
+        /*margin-bottom: $baseline * 1.5;*/
+    }  
 }

@@ -8,34 +8,33 @@
     margin-top: $baseline*2;
    
 }
+
 #question, #answer{
     margin-bottom: $baseline;
+        li{
+            line-height: $baseline * 1.5;
+        }
 }
-.module {
 
+.module {
     a {
         border-bottom: none;
         margin-bottom: 0;
     }
-
     header {
         height: $baseline * 4;
         background-color: #fff;
         padding-top: $baseline + 5px;
-
         h2 {
             padding: 0;
             margin: 0;
             padding-left: $baseline*2;
-
             a {
                 color: $text-color;
-
                 .fa-angle-right {
                     margin-left: $baseline;
                     font-size: 20px;
                 }
-
                 &:hover .fa-angle-right {
                     margin-left: $baseline + 5px;
                     -moz-transition: $trans;
@@ -50,15 +49,12 @@
     .content {
         padding-top: $baseline;
         border-left: 3px solid #ccc;
-
         .items {
             padding: 0 0 $baseline *2 0;
             margin: 0;
             list-style-type: none;
-
             .item {
                 padding: $baseline/2 0;
-
                 &:hover {
                     background-color: #ccc;
                     -moz-transition: $trans;
@@ -66,35 +62,29 @@
                     -webkit-transition: $trans;
                     transition: $trans;
                 }
-
                 .date, .hours {
                     color: $text-color-light;
                     font-size: 80%;
                     letter-spacing: 1px;
                 }
-
                 .fa-heart {
                     padding-top: 2px;
                 }
-
                 a {
                     display: block;
                     padding: 0 $baseline 0 $baseline;
                     color: $text-color;
                     margin-bottom: 0;
-
                     span.date {
                         color: $text-color-light;
                         letter-spacing: 1px;
                     }
-
                     span.type {
                         color: $text-color-light;
                         text-transform: uppercase;
                         letter-spacing: 1.5px;
                         font-size: 80%;
                     }
-
                     span.title {
                         font-weight: bold;
                     }

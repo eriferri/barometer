@@ -452,6 +452,8 @@ ul.nav-pills {
 
 #question, #answer {
   margin-bottom: 36px; }
+  #question li, #answer li {
+    line-height: 54px; }
 
 .module a {
   border-bottom: none;
@@ -1382,54 +1384,12 @@ section.results section.generalresults {
 
 /*------ Colors --------*/
 footer {
-  padding: 72px 0 108px 0;
-  min-height: 288px; }
+  padding: 0 90px;
+  min-height: 288px;
+  font-size: 14px; }
   footer .logo {
-    width: 14%;
-    max-width: 250px;
-    margin-bottom: 54px; }
-  footer h3 {
-    margin-bottom: 72px; }
-  footer h3.footheading {
-    text-transform: uppercase;
-    font-weight: normal;
-    font-size: 24px; }
-  footer nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none; }
-    footer nav ul li {
-      line-height: 72px; }
-      footer nav ul li a {
-        color: white;
-        transition: all .5s ease; }
-        footer nav ul li a:hover {
-          color: white;
-          padding-bottom: 2px; }
-  footer nav.icons ul {
-    margin-top: 0; }
-    footer nav.icons ul li {
-      line-height: 72px;
-      margin-left: -72px; }
-      footer nav.icons ul li .icon {
-        width: 54px;
-        margin-right: 18px;
-        margin-top: 8px; }
-      footer nav.icons ul li.weekmenu {
-        margin-left: 0; }
-  footer nav.icons .arrow-right-foot {
-    width: 21px;
-    height: 8px;
-    margin-left: 36px; }
-  footer nav.multicol {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-    -moz-column-gap: 72px;
-    -webkit-column-gap: 72px;
-    column-gap: 72px; }
-  footer .insta {
-    max-width: 150px; }
+    max-width: 40px;
+    /*margin-bottom: $baseline * 1.5;*/ }
 
 /* ------- menu start ------ */
 .brand_logo {
