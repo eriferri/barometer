@@ -1,3 +1,6 @@
+<?php include( "inc/html-head.php"); ?>
+<?php include( "inc/header.php"); ?>
+
 <section id="questionaire">
   <div class="row" id="question">
     <div class="questionnumber col-sm-1">1 <span class="lightquest">/11</span></div>
@@ -24,3 +27,6 @@ produktgrupper?</div>
   </div>
     <div class="push"></div>
 </section>
+
+
+<?php include( "inc/footer.php"); ?>

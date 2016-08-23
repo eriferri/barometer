@@ -1,12 +1,17 @@
 /* ------ Footer styles ------ */
 @import '_variables.scss';
-
-footer {
-    padding: 0 90px;
-    min-height: $baseline * 8;
+footer.footer{
+    padding: 0 90px $baseline 90px;
+    min-height: $baseline * 2;
+    /*background-color: red;*/
     font-size: 14px;
+
+    width: 100%;
     .logo {
         max-width: 40px;
-        /*margin-bottom: $baseline * 1.5;*/
+        margin-bottom: -$baseline/3;
     }  
 }
+/*.push{
+    height: $baseline * 2;
+}*/

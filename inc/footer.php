@@ -1,8 +1,8 @@
 
-<footer>
+<footer class="footer">
 	<div class="row">
-		<div class="logo" style="width:40px;">
-			<img src="img/logo_inmeta.png">
+		<div style="width:40px;">
+			<img  class="logo"  src="img/logo_inmeta.png">
 		</div>
 	</div>
 	<div class="row">
