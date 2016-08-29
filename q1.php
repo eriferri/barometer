@@ -24,7 +24,7 @@
 
 
   <div class="row" id="nav">
-   <div class="btn forrige col-sm-1 "<a href="index.php">Forrige</a></div>
+   <div class="btn forrige col-sm-1"><a href="index.php">Forrige</a></div>
    <div class="btn forrige col-sm-1 col-sm-offset-4 "><a href="q2.php">Neste</a></div>
   </div>
     <div class="push"></div>

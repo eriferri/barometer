@@ -8,10 +8,15 @@
       <p>Angi på en skala fra 1 til 5, der 1 er i ingen grad overhode og 5 er i svært stor grad + vet ikke på følgende:
 </p></div>
   </div>
-  <div class="row col-sm-offset-1 input-group btn-group" id="answer">
+  <div class="row col-sm-offset-1 input-group btn-group" id="answer"> 
     <form method="post">
-      <div class="">
-        
+      <div class="row input-group btn-group"> 
+        <div class="col-sm-1">1</div> 
+        <div class="col-sm-1">2</div> 
+        <div class="col-sm-1">3</div> 
+        <div class="col-sm-1">4</div> 
+        <div class="col-sm-1">5</div> 
+        <div class="col-sm-1">Vet ikke</div> 
       </div>
 
 
