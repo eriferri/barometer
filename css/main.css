@@ -1390,6 +1390,78 @@ section.results section.generalresults {
   margin: 0 0 36px 36px;
   border-left: 2px solid transparent; }
 
+/*#progress {
+
+  left: calc(100% + 25px);
+  font-size: 15px;
+  padding: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.knob-container {
+  position: absolute;
+}
+
+
+.rail {
+  background-color: $brand-primary;
+  height: 5px;
+  width: 400px;
+  top: 25px;
+  overflow: visible;
+  padding: 0;
+  /*left: 50%;
+  top: 100px;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+.knob {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;  
+  background: $brand-primary;
+  border-radius: 50%;
+}
+
+*/
+#progress {
+  position: absolute;
+  left: calc(100% + 25px);
+  font-size: 15px;
+  padding: 10px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%; }
+
+.knob-container {
+  position: absolute; }
+
+.rail {
+  background-color: black;
+  height: 5px;
+  width: 400px;
+  top: 25px;
+  overflow: visible;
+  padding: 0;
+  left: 50%;
+  top: 100px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.knob {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  background: greenyellow;
+  border-radius: 50%; }
+
 /* ------ Footer styles ------ */
 .brand_logo {
   max-width: 135px; }
@@ -1662,28 +1734,123 @@ main, footer {
     #instagram .moduleFoot .social {
       text-align: left; }
 
-.progress {
-  border-radius: 0; }
+/*@import 'compass';
 
-.progress-bar {
-  width: 0;
-  -webkit-animation: progress 0.5s forwards ease-out;
-  animation: progress 0.5s forwards ease-out; }
 
-@-webkit-keyframes progress {
-  from {
-    width: 62; }
+/*@mixin animation{
 
-  to {
-    width: 69%; } }
+}
 
-@keyframes progress {
-  from {
-    width: 62%; }
+.q1b {
+  @include animation(q1 0.5s forwards ease-out);
+}
+@include keyframes(q1) {
+  from {width: 0;}
+  to {width: 7%;}
+}
 
-  to {
-    width: 69%; } }
+.q2b {
+  @include animation(q2 0.5s forwards ease-out);
+}
+@include keyframes(q2) {
+  from {width: 7%;}
+  to {width: 14%;}
+}
+.q3b {
+  @include animation(q3 0.5s forwards ease-out);
+}
+@include keyframes(q3) {
+  from {width: 14%;}
+  to {width: 21%;}
+}
 
+.q4b {
+  @include animation(q4 0.5s forwards ease-out);
+}
+@include keyframes(q4) {
+  from {width: 21%;}
+  to {width: 29%;}
+}
+
+.q5b {
+  @include animation(q5 0.5s forwards ease-out);
+}
+@include keyframes(q5) {
+  from {width: 29%;}
+  to {width: 36%;}
+}
+
+.q6b {
+  @include animation(q6 0.5s forwards ease-out);
+}
+@include keyframes(q6) {
+  from {width: 36%;}
+  to {width: 43%;}
+}
+
+.q7b {
+  @include animation(q7 0.5s forwards ease-out);
+}
+@include keyframes(q7) {
+  from {width: 43%;}
+  to {width: 50%;}
+}
+
+.q8b {
+  @include animation(q8 0.5s forwards ease-out);
+}
+@include keyframes(q8) {
+  from {width: 50%;}
+  to {width: 57%;}
+}
+
+.q9b {
+  @include animation(q9 0.5s forwards ease-out);
+}
+@include keyframes(q9) {
+  from {width: 57%;}
+  to {width: 64%;}
+}
+
+.q10b {
+  @include animation(q10 0.5s forwards ease-out);
+}
+@include keyframes(q10) {
+  from {width: 64%;}
+  to {width: 71%;}
+}
+
+.q11b {
+  @include animation(q11 0.5s forwards ease-out);
+}
+@include keyframes(q11) {
+  from {width: 71%;}
+  to {width: 79%;}
+}
+
+.q12b {
+  @include animation(q12 0.5s forwards ease-out);
+}
+@include keyframes(q12) {
+  from {width: 79%;}
+  to {width: 86%;}
+}
+
+.q13b {
+  @include animation(q13 0.5s forwards ease-out);
+}
+@include keyframes(q13) {
+  from {width: 86%;}
+  to {width: 93%;}
+}
+
+.q14b {
+  @include animation(q14 0.5s forwards ease-out);
+}
+@include keyframes(q14) {
+  from {width: 93%;}
+  to {width: 100%;}
+}*/
 /*@import compass
   .progress-bar
     width: 0

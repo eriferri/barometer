@@ -1,7 +1,8 @@
-var rangeMin = 0;
-var rangeMax = 100;
 
-var progress = document.querySelector("#slider");
+var rangeMin = 47;
+var rangeMax = 91;
+
+var progress = document.querySelector("#progress");
 var rail = document.querySelector(".rail");
 var knob = document.querySelector(".knob");
 var width = rail.offsetWidth;

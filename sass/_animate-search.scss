@@ -1,39 +1,9 @@
+/*@import 'compass';
 
-.progress {
-      border-radius:0;
-    }
-/*    .progress-bar {
-      width: 0;
-      -moz-animation: progress 0.5s forwards ease-out;
-      -webkit-animation: progress 0.5s forwards ease-out;
-      animation: progress 0.5s forwards ease-out;
 
-    }
+/*@mixin animation{
 
-    @-moz-keyframes progress {
-      from {
-        width: 62%;
-      }
-      to {
-        width: 69%;
-      }
-    }
-    @-webkit-keyframes progress {
-      from {
-        width: 62;
-      }
-      to {
-        width: 69%;
-      }
-    }
-    @keyframes progress {
-      from {
-        width: 62%;
-      }
-      to {
-        width: 69%;
-      }
-    }*/
+}
 
 .q1b {
   @include animation(q1 0.5s forwards ease-out);
@@ -144,7 +114,7 @@
 @include keyframes(q14) {
   from {width: 93%;}
   to {width: 100%;}
-}
+}*/ 
     
 
   /*@import compass

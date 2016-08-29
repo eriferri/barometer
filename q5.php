@@ -4,12 +4,18 @@
 <section id="questionaire">
   <div class="row" id="question">
     <div class="questionnumber col-sm-1">1 <span class="lightquest">/11</span></div>
-    <div class="questiontext col-sm-4">Er virksomheten organisert etter produktgrupper, eller etter 
-salgsfunksjoner mot kunder uavhengig av 
-produktgrupper?</div>
+    <div class="questiontext col-sm-4"><p>I hvilken grad har ansatte nedover i organisasjonen mulighet til å påvirke denne utviklingen?</p>
+      <p>Angi på en skala fra 1 til 5, der 1 er i ingen grad overhode og 5 er i svært stor grad + vet ikke på følgende:
+</p></div>
   </div>
   <div class="row col-sm-offset-1 input-group btn-group" id="answer">
     <form method="post">
+      <div class="">
+        
+      </div>
+
+
+
       <ul>
         <li><input type="radio" aria-label="..." name="q9" value="a" id="q9a">
         <label for="q9a">Produktgrupper</label></li>
