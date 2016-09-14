@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://fast.fonts.net/cssapi/cbde1ec3-980c-40de-a56b-21aa6237f5d2.css">
+    <link rel="stylesheet" href="/assets/css/linear.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <title></title>
+</head>
+<body>
+<div class="wrapper">
+    <form>
+        <div class="m-progress hidden">
+            <div class="m-progress-bar-wrapper">
+                <div class="m-progress-bar">
+                </div>
+            </div><!--
+                <div class="m-progress-stats">
+                    <span class="m-progress-current">
+                    </span>
+                    /
+                    <span class="m-progress-total">
+                    </span>
+                </div>
+                <div class="m-progress-complete">
+                    Completed
+                </div>-->
+        </div>
+        <div class="start step-0 step current">
+            <div class="box">
+                <h1>Hei,</h1>
+                <p>Introteskt. Curabitur vel semper quam. Pellentesque varius nisi nec nulla rhoncus aliquam. Integer
+                    tristique rhoncus purus rutrum feugiat. Nunc ut mollis augue. Integer pharetra condimentum diam quis
+                    accumsan. Nam eu purus sollicitudin, rutrum est nec, dictum ipsum.</p>
+                <p>
+                    Og finn ut hvor digitalt modent din virksomhet er i forhold til andre virksomheter i din
+                    bransje.</p>
+
+            </div>
+        </div>
+        <formfield class="step-1 step" data-requires="select1,select2,select3">
+            <div class="box">
+                <div class="row question col-sm-12">
+                    <p>Før vi starter undersøkelsen, trenger vi å vite litt om deg og din virksomhet</p>
+                    <p class="smallprint">
+                        (Denne informasjonen vil kun bli brukt til kategorisering av svar og tilbakemelding til deg.)
+                    </p>
+                </div>
+
+                <div class="row col-sm-12 answer">
+                    <select name="select1">
+                        <option value="">Velg din bransje</option>
+                        <option value="valg1">Valg 1</option>
+                        <option value="valg2">Valg 2</option>
+                        <option value="valg3">Valg 3</option>
+                    </select>
+
+                    <select name="select2">
+                        <option value="">Hva er din tittel</option>
+                        <option value="valg1">Valg 1</option>
+                        <option value="valg2">Valg 2</option>
+                        <option value="valg3">Valg 3</option>
+                    </select>
+
+                    <select name="select3">
+                        <option value="">Hva er din virksomhets årlige omsetning?</option>
+                        <option value="valg1">Valg 1</option>
+                        <option value="valg2">Valg 2</option>
+                        <option value="valg3">Valg 3</option>
+                    </select>
+                </div>
+            </div>
+        </formfield>
+        <formfield class="step-2 step" data-requires="a1">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>1</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            Hvor stor andel av virksomhetens B2B omsetning (handel mellom bedrifter) er digital
+                            omsetning,
+                            altså salg gjennom digitale kanaler?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row ">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <input type="text" class="slider" data-step="1" data-min="0" data-max="100" data-after="%"
+                               name="a1"
+                               readonly value="0"><span>%</span>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+        <formfield class="step-3 step" data-requires="a2">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>2</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>Hvor stor tror du denne andelen er om to år?</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div clasS="col-sm-offset-2 col-sm-10 answer">
+                        <input type="text" class="slider" data-step="1" data-min="0" data-max="100" data-after="%"
+                               name="a2"
+                               readonly value="0"><span>%</span>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+        <formfield class="step-4 step" data-requires="a3">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>3</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>Er virksomheten etter ditt syn i forkant, midt i eller i etterkant av utviklingen av digitale
+                            kanaler?</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a3" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">i forkant</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a3" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">midt i</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a3" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">i etterkant</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+        <formfield class="step-5 step" data-requires="a4">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>4</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>Bør det legges mer eller mindre vekt på salg i digitale kanaler i din virksomhet?</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a4" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Mer</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a4" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">Samme</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a4" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Mindre</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-6 step" data-requires="a5">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>5</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>Bør det legges mer eller mindre vekt på salg i digitale kanaler i din virksomhet?</p>
+                        <p class="smallprint">
+                            Angi på en skala fra 1 til 5, der 1 er i ingen grad og 5 er i svært stor grad
+                            på følgende:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul class="radio_range radio_range_title">
+                            <li><span>1</span></li>
+                            <li><span>2</span></li>
+                            <li><span>3</span></li>
+                            <li><span>4</span></li>
+                            <li><span>5</span></li>
+                        </ul>
+                        <ul class="radio_range">
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a5" value="1"><span class="outer"><span class="inner"></span></span>
+                                        <span class="text">1</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a5" value="2"><span class="outer"><span class="inner"></span></span>
+                                    <span class="text">2</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a5" value="3"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">3</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a5" value="4">
+                                    <span class="outer">
+                                        <span class="inner"></span></span>
+                                    <span class="text">4</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a5" value="5"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">5</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-7 step" data-requires="a6">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>6</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>I hvilken grad er kundeopplevelsen vektlagt i utvikling og
+                            implementering av digitale kanaler?</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <textarea name="a6"></textarea>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-8 step" data-requires="a7">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>7</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            I hvilken grad er kundeopplevelsen vektlagt i utvikling og
+                            implementering av digitale kanaler?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a7" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ingen grad</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a7" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">Middels</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a7" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Svært stor grad</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-9 step" data-requires="a8a,a8b,a8c">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>8</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            I hvilken grad er virksomhetens øvrige funksjoner (økonomi,
+                            logistikk og marketing) integrert i de digitale salgskanalene?
+                        </p>
+                        <p class="smallprint">
+                            Angi på en skala fra 1 til 5, der 1 er i ingen grad og 5 er i svært stor grad
+                            på følgende:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 answer">
+                        <ul class="radio_range radio_range_title">
+                            <li class="radio_range_label"></li>
+                            <li><span>1</span></li>
+                            <li><span>2</span></li>
+                            <li><span>3</span></li>
+                            <li><span>4</span></li>
+                            <li><span>5</span></li>
+                        </ul>
+                        <ul class="radio_range">
+                            <li class="radio_range_label">Logistikk</li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8a" value="1"><span class="outer"><span
+                                        class="inner"></span></span>
+                                        <span class="text">1</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8a" value="2"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">2</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8a" value="3"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">3</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8a" value="4"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">4</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8a" value="5"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">5</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="radio_range">
+                            <li class="radio_range_label">Økonomi</li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8b" value="1"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">1</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8b" value="2"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">2</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8b" value="3"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">3</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8b" value="4"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">4</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8b" value="5"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">5</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="radio_range">
+                            <li class="radio_range_label">Markedsføring</li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8c" value="1"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">1</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8c" value="2"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">2</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8c" value="3"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">3</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8c" value="4"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">4</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a8c" value="5"><span class="outer"><span
+                                        class="inner"></span></span>
+                                    <span class="text">5</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-10 step" data-requires="a9">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>9</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            Er virksomheten hovedsakelig organisert med produkt- eller
+                            kundefokus?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a9" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Produktfokus</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a9" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">Kundefokus</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-11 step" data-requires="a10">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>10</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            Fører utvikling av digitale salgskanaler i din virksomheten til
+                            utvidede markedsmuligheter?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a10" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja, helt sikkert</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a10" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja, trolig</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a10" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Nei</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-12 step" data-requires="a11">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>11</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            Vil utviking av digitale kanaler gi muligheter i nye markeder
+                            nasjonalt og /eller internasjonalt?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a11" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja-nasjonalt</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a11" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja-internasjonalt</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a11" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja-begge deler</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a11" value="d">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Nei</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-13 step" data-requires="a12">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>12</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            Vil andre virksomheters utvikling av digitale salgkanaler kunne
+                            gi ny konkurranse på din virksomhets markeder?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a12" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja, helt sikkert</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a12" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja, trolig</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a12" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Nei</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step-14 step" data-requires="a13">
+            <div class="box">
+                <div class="row question">
+                    <div class="questionnumber col-sm-2"><span>13</span></div>
+                    <div class="questiontext col-sm-10">
+                        <p>
+                            Systematiseres og utnyttes kundeerfaringer som er innhentet
+                            gjennom digitale kanaler?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10 answer">
+                        <ul>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a13" value="a">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Ja, i stor grad</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a13" value="b"><span
+                                        class="outer"><span class="inner"></span></span>
+                                    <span class="text">I noen grad</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio">
+                                    <input type="radio" name="a13" value="c">
+                                    <span class="outer"><span class="inner"></span></span>
+                                    <span class="text">Nei</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </formfield>
+
+        <formfield class="step step-15 done" data-step="3">
+            <div class="box">
+
+            </div>
+        </formfield>
+    </form>
+    <footer>
+        <p>
+            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" viewBox="-45.545 -72.166 2450 525" enable-background="new -45.545 -72.166 2450 525"
+             xml:space="preserve">
+            <g id="inmeta_logo">
+                <rect x="-37.553" y="95.084" width="95.933" height="342.409"></rect>
+                <path d="M10.414-67.466c-31.969,0-55.959,28.656-55.959,56.622c0,26.64,23.99,55.296,55.959,55.296 c30.644,0,55.973-27.317,55.973-56.622C66.386-42.826,39.069-67.466,10.414-67.466z"></path>
+                <path d="M299.473,85.753c-38.636,0-72.62,12.658-101.262,53.957h-1.339V95.084h-91.931v342.409h95.934V242.961 c0-46.615,23.977-79.922,62.613-79.922c29.981,0,59.962,16.647,59.962,65.953v208.501h95.934V205.015 C419.384,139.062,382.073,85.753,299.473,85.753z"></path>
+                <path d="M854.735,85.753c-28.656,0-66.616,7.992-100.586,53.309c-23.977-47.332-69.293-53.309-91.945-53.309 c-39.298,0-72.606,8.668-103.263,53.957h-1.325V95.084h-91.931v342.409h95.934V229.641c0-33.294,14.645-66.602,53.944-66.602 c39.988,0,51.97,27.303,51.97,63.289v211.165h95.934V224.326c0-27.317,17.986-61.287,54.635-61.287 c36.634,0,51.307,27.303,51.307,53.971v220.483h95.907V191.681C965.314,119.737,913.344,85.753,854.735,85.753z"></path>
+                <path d="M1176.852,85.753c-103.263,0-175.207,70.604-175.207,181.198c0,109.254,71.944,179.873,175.207,179.873 c80.612,0,143.259-36.648,166.573-106.604l-93.291-7.316c-13.32,26.64-39.299,40.637-68.617,40.637 c-51.308,0-75.933-39.961-79.937-79.936h250.499v-26.654C1352.08,156.358,1280.129,85.753,1176.852,85.753z M1101.581,232.318 c5.329-38.649,29.981-73.283,79.937-73.283c45.952,0,71.281,39.975,74.608,73.283H1101.581z"></path>
+                <path d="M1509.355-3.514h-95.934v98.598h-43.964v73.269h43.964v183.862c0,73.959,37.987,89.281,100.613,89.281 c15.308,0,30.617-2.002,45.952-4.003v-75.27c-5.991,1.339-11.319,1.989-19.312,1.989c-24.653,0-31.32-7.33-31.32-22.638v-173.22 h50.631V95.084h-50.631V-3.514z"></path>
+                <path d="M1928.197,437.493c-2.664-12.644-4.665-24.639-4.665-42.625V196.346c0-78.611-70.619-110.593-155.207-110.593 c-119.924,0-157.221,67.291-160.561,119.91h91.931c1.988-30.63,25.316-50.631,64.615-50.631c41.962,0,67.278,20.001,67.278,60.625 v15.998l-88.591,5.315c-133.907,8.005-145.902,68.617-145.902,105.265c0,77.948,65.953,104.589,119.924,104.589 c39.961,0,85.264-11.995,117.247-53.958h1.339v44.627H1928.197z M1831.587,319.583c0,41.3-48.616,57.948-78.598,57.948 c-31.982,0-59.962-9.318-59.962-39.961c0-24.653,14.659-37.973,58.637-41.976l79.923-7.316V319.583z"></path>
+            </g>
+        </svg>
+            Digital modenhet barometer
+        </p>
+    </footer>
+</div>
+<script src="assets/js/linear.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+$maincolor : #431297;
+$background : #F5F2FA;
+
+@import "radio";
+
+.m-progress {
+	background : #D8CCEA;
+	.m-progress-bar {
+		min-height : 1em;
+		background : $maincolor;
+		width      : 0%;
+	}
+}
+
+.wrapper {
+	font-size   : 20px;
+	line-height : 28px;
+	font-family : 'Neuzeit S LT W01 Book', sans-serif;
+	background  : #F5F2FA;
+	overflow    : hidden;
+	margin      : 0;
+	min-height  : 100vh;
+	position    : relative;
+}
+
+p {
+	margin : 26px 0;
+	&:first-child {
+		margin-top : 0;
+	}
+	&:last-child {
+		margin-bottom : 0;
+	}
+	&.smallprint {
+		font-size : .8em;
+	}
+}
+
+.row {
+	margin-top    : 26px;
+	margin-bottom : 26px;
+}
+
+strong, .bold {
+	font-family : 'NeuzeitSLTW01-BookHeavy', sans-serif;
+}
+
+form {
+}
+
+.step {
+	width           : 100vw;
+	min-height      : 100vh;
+	@media screen AND (max-width : 700px) {
+		min-height : auto;
+	}
+	top             : 0;
+	left            : 0;
+	position        : absolute;
+	transform       : translateX(100vw);
+	transition      : 1s transform;
+	display         : flex;
+	justify-content : space-around;
+	align-items     : center;
+	@media screen AND (max-width : 700px) {
+		align-items : flex-start;
+	}
+
+	.box {
+		max-width : 100%;
+		width     : 700px;
+		padding   : 20px;
+	}
+
+	&.current {
+		transform : translateX(0);
+	}
+	&.prev {
+		transform : translateX(-100vw);
+	}
+
+	.buttons {
+		position : relative;
+		overflow : hidden;
+		.next, .done {
+			float : right;
+		}
+		span, button {
+			background : $background;
+			&:hover {
+				color      : $maincolor;
+				box-shadow : inset 0 0 10px rgba($maincolor, .1);
+			}
+			padding    : 15px 30px;
+			display    : inline-block;
+			cursor     : pointer;
+			border     : 1px solid $maincolor;
+			&.disabled {
+				cursor  : inherit;
+				opacity : 0.1;
+			}
+		}
+	}
+}
+
+.start.step {
+	.buttons {
+		text-align : center;
+		span.next {
+			float     : none;
+			padding   : 25px 50px;
+			font-size : 1.1em;
+		}
+	}
+}
+
+.questionnumber {
+	text-align : left;
+	@media screen AND (max-width : 768px) {
+		margin-bottom : 3em;
+	}
+}
+
+form {
+	.ui-slider {
+		display      : inline-block;
+		height       : 2px;
+		background   : $maincolor !important;
+		border       : none !important;
+		width        : calc(100% - 110px);
+		margin-right : 10px;
+		position     : relative;
+		top          : -12px;
+		&.ui-slider-horizontal .ui-slider-handle {
+			top : -12px;
+		}
+		& + input {
+			color      : $maincolor;
+			width      : 60px;
+			border     : none;
+			background : transparent;
+			text-align : right;
+			font-size  : 1.5em;
+			& + span {
+				color     : $maincolor;
+				font-size : 1.5em;
+				width     : 39px;
+			}
+		}
+	}
+
+	.textarea_container {
+		position : relative;
+		textarea {
+			width      : 100%;
+			height     : 7em;
+			padding    : 1em;
+			border     : none;
+			box-shadow : none;
+			background : white;
+			& + span {
+				content    : "";
+				color      : $maincolor;
+				opacity    : .2;
+				position   : absolute;
+				left       : 1em;
+				top        : 1em;
+				transition : .3s all;
+			}
+		}
+	}
+
+	select, .select_container {
+		select {
+			opacity  : 0;
+			position : absolute;
+			top      : 0;
+			left     : 0;
+		}
+		-webkit-appearance : none;
+		border-radius      : 0;
+		box-shadow         : none;
+		border             : none;
+		position           : relative;
+		color              : $maincolor;
+		background         : white;
+		padding            : 15px 30px;
+		display            : inline-block;
+		cursor             : pointer;
+		width              : 100%;
+		&.disabled {
+			cursor  : inherit;
+			opacity : 0.1;
+		}
+	}
+	.select_container {
+		margin : .5em 0;
+		select:focus {
+			& + span {
+				&:after {
+					opacity : .1;
+				}
+			}
+		}
+		span {
+			padding-right : 40px;
+			&:after {
+				position     : absolute;
+				top          : 50%;
+				right        : 15px;
+				margin-top   : -3px;
+				height       : 1px;
+				border-style : solid;
+				border-color : $maincolor transparent transparent transparent;
+				border-width : 10px;
+				content      : "";
+			}
+		}
+	}
+}
+
+.answer {
+	margin-top    : 2em;
+	margin-bottom : 2em;
+	ul {
+		list-style-type : none;
+		padding         : 0;
+		li {
+			margin : .5em 0;
+		}
+	}
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	border-radius : 50%;
+	border        : 1px solid $maincolor;
+	background    : $maincolor;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	border     : 1px solid $maincolor;
+	background : $maincolor;
+}
+
+footer {
+	font-size   : 14px;
+	line-height : 1.5em;
+	padding     : 0;
+	bottom      : 20px;
+	left        : 20px;
+	position    : absolute;
+
+	@media screen AND (min-width : 700px) {
+		left   : 50px;
+		bottom : 50px;
+	}
+
+	#logo {
+		height        : 1em;
+		display       : block;
+		margin-bottom : 2px;
+	}
+}
